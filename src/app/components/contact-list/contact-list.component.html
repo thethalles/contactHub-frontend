@@ -1,1 +1,15 @@
-<p>contact-list works!</p>
+<div class="mb-4">
+  <h3>Meus Contatos</h3>
+  <div class="input-group">
+    <span class="input-group-text"><i class="bi bi-search"></i></span>
+    <input type="text" class="form-control" placeholder="Pesquisar por nome, email, empresa..."
+           [(ngModel)]="filtro" (ngModelChange)="pesquisar()">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let contato of contatos">
+    <app-contact-card [contato]="contato"></app-contact-card>
+  </div>
+</div>
+

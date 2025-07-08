@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Contato } from '../../models/Contato';
 
 @Component({
   selector: 'app-contact-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './contact-card.component.css'
 })
 export class ContactCardComponent {
-
+  @Input() contato!: Contato;
 }
