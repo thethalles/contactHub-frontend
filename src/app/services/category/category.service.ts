@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CategoryService {
-  private apiUrl = 'http://localhost:8080/categorias';
+  private apiUrl = 'https://contact-hub.duckdns.org8080/categorias';
 
   constructor(private http: HttpClient) { }
 
