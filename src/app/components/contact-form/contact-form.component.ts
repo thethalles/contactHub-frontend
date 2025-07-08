@@ -47,7 +47,7 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit(): void {
     // Carregar categorias
-    this.http.get<Categoria[]>('http://localhost:8080/categorias').subscribe({
+    this.http.get<Categoria[]>('http://contact-hub.duckdns.org/categorias').subscribe({
       next: (cats) => (this.categorias = cats),
       error: () => (this.categorias = [])
     });
